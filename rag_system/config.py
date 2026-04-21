@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / ".env")
 
 # --- API密钥配置 ---
-SILICONFLOW_API_KEY = "sk-pivybkgbykincfrvuymnnnloyigkthtaoxvmrckvwmiwwwyr" 
+SILICONFLOW_API_KEY = os.getenv("SILICONFLOW_API_KEY")
 
 # --- 模型 identifiers ---
 # 本地模型
