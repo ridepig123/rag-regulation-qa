@@ -142,8 +142,8 @@ graph TD
 - **文档处理**: PyPDF2, python-docx
 - **向量检索**: FAISS, BGE嵌入模型
 - **大语言模型**: 
-  - 本地: Ollama (qwen3:30b)
-  - 在线: SiliconFlow (DeepSeek-R1)
+  - 本地: Ollama (qwen3:4b)
+  - 在线: SiliconFlow (DeepSeek-V3.2)
 - **嵌入模型**:
   - 本地: BAAI/bge-small-zh-v1.5
   - 在线: Qwen/Qwen3-Embedding-8B
@@ -181,7 +181,7 @@ MAX_CHUNK_SIZE_BEFORE_SPLIT = 800  # 预分块最大阈值
 
 **调整检索敏感度** (如果觉得回复内容太发散或检索不到内容)：
 ```python
-DEFAULT_RETRIEVAL_K = 5            # 检索数量
+DEFAULT_RETRIEVAL_K = 10            # 检索数量
 DEFAULT_RETRIEVAL_THRESHOLD = 0.4  # 相似度阈值
 ```
 
